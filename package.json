@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "tslint -p tsconfig.json \"src/**/*.ts\" && stylelint \"src/**/*.scss\"",
+    "lint:fix": "tslint -p tsconfig.json -c tslint.json \"src/**/*.ts\" --fix",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -56,7 +57,7 @@
   },
   "lint-staged": {
     "src/app/*.{scss}": [
-      "stylelint --syntax=scss",
+      "prettier --write --single-quote",
       "git add"
     ],
     "{src,test}/**/*.html": [

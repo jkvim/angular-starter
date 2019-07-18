@@ -17,6 +17,7 @@
 * [ ] build
 * [ ] CI config
 * [ ] icon
+* [ ] code style
 
 ## Folders
 ├── app

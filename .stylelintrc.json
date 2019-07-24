@@ -9,12 +9,7 @@
       }
     ],
     "declaration-colon-space-after": "always",
-    "indentation": [
-      "tab",
-      {
-        "except": ["value"]
-      }
-    ],
+    "indentation": 2,
     "max-empty-lines": 2,
     "rule-empty-line-before": [
       "always",

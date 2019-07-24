@@ -56,15 +56,7 @@
     }
   },
   "lint-staged": {
-    "src/app/*.{scss}": [
-      "prettier --write --single-quote",
-      "git add"
-    ],
-    "{src,test}/**/*.html": [
-      "prettier --write --single-quote",
-      "git add"
-    ],
-    "{src,test}/**/*.ts": [
+    "src/**/*.{scss,html,ts}": [
       "prettier --write --single-quote",
       "git add"
     ]

@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "tslint -p tsconfig.json \"src/**/*.ts\" && stylelint \"src/**/*.scss\"",
     "lint:fix": "tslint -p tsconfig.json -c tslint.json \"src/**/*.ts\" --fix",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "analyze": "ng build --prod --stats-json && webpack-bundle-analyzer dist/angular-starter/stats-es2015.json"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +23,7 @@
     "@angular/router": "~8.1.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
+    "webpack-bundle-analyzer": "^3.3.2",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
